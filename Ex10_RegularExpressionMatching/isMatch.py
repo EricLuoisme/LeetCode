@@ -16,6 +16,7 @@ def isMatch(s: str, p: str) -> bool:
             # then it should continue be Ture if left substring is True already.
             if s[i - 1] == p[j - 1] or p[j - 1] == '.':
                 T[i][j] = T[i - 1][j - 1]
+                a = 0
 
             # if current pattern is '*', we have two situations
             elif p[j - 1] == '*':
