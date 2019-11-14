@@ -2,7 +2,7 @@
 import random
 
 def findMedianSortedArrays(nums1, nums2) -> float:
-    # by using the sort() method in python
+    # by using the sort() method in python, the fastest way
     # nums3 = nums1 + nums2
     # nums3.sort()
     #
