@@ -90,5 +90,5 @@ def getLinRealEles(return_string, line_string):
 
 
 
-print(convert("A", 1))
+print(convert("ABCDEFG", 3))
 # print(convert("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 5))
