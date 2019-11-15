@@ -1,6 +1,17 @@
 
 def trap(height) -> int:
 
+    # the idea here is about using two way scanning and the overlapping
+    # area would be the real area that contain water. First we scan from
+    # the left, we assume that the right hand side would always higher
+    # then the left hand side. Thus, the volume of all traps would only
+    # be determined by the left hand side's height. (e.g we got [5,2]
+    # then we would get volume (5-2=3). Again, we do this from right end,
+    # (e.g we got [2,5] then we get volume(2-5 -> 2)). Then the minimum
+    # one is the real volume we get, which can be represented by:
+    # vol[i] = min(left_max - h[i], right_max - h[i])
+
+
     # from left to right
     left_max = 0
     right_max = 0
@@ -8,7 +19,7 @@ def trap(height) -> int:
     right2left = []
     i = 0
     j = len(height) - 1
-    
+
     while i < len(height):
         if height[i] > left_max:
             left_max = height[i]
