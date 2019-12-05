@@ -41,5 +41,3 @@ nums = [1,0,-1,0,-2,2]
 target = 0
 sol = Solution()
 print(sol.fourSum(nums, target))
-
-print([1] + [2])
