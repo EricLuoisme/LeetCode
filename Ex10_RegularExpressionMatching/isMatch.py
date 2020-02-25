@@ -31,6 +31,6 @@ def isMatch(s: str, p: str) -> bool:
     return T[- 1][- 1]
 
 
-s = 'a'
+s = 'aa'
 p = 'a*'
 print(isMatch(s, p))
